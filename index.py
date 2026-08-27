@@ -20,7 +20,7 @@ class Biblioteca:
         self.catalogo.append(livro)
         print(f"LIVRO:{livro.titulo} ADICIONADO COM SUCESSO!")
     def remover(self,titulo,id):#remover livro usando o remove()
-        for livro in self.catalogo:#pecorre o catalogo
+        for livro in self.catalogo:#pecorre a lista catalogo encontrando o livro e devolvendo para a estrutura condicional if
             if livro.titulo.lower()== titulo.lower() and livro.id==id:
                 self.catalogo.remove(livro)
                 print(f"livro: {livro.titulo} com id: {livro.id} removido com sucesso")
